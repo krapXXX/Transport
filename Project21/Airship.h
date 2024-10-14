@@ -5,8 +5,8 @@ class Airship :public Air
 	char* firm;
 public:
 	Airship();
-	Airship(char* s, int y, char* t, char* f);
-	void Input(char* s, int y, char* t, char* f);
+	Airship(const char* s, int y,const  char* t,const char* f);
+	void Input(const char* s, int y,const  char* t,const char* f);
 	void Print();
 	~Airship();
 };

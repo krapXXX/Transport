@@ -5,8 +5,8 @@ class Land :public Transport
 	char* type;
 public:
 	Land();
-	Land(char* s, int y, char* t);
-	void Input(char* s, int y, char* t);
+	Land(const char* s, int y, const char* t);
+	void Input(const char* s, int y,const char* t);
 	void Print();
 	~Land();
 };

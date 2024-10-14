@@ -8,14 +8,14 @@ Transport::Transport()
 	year = 0;
 }
 
-Transport::Transport(char* s, int y)
+Transport::Transport(const char* s, int y)
 {
 	surface = new char[strlen(s) + 1];
 	strcpy_s(surface, strlen(s) + 1, s);
 	year = y;
 }
 
-void Transport::Input(char* s, int y)
+void Transport::Input(const char* s, int y)
 {
 	if (surface != nullptr)
 	{

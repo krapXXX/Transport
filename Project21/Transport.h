@@ -6,8 +6,8 @@ protected:
 		int year;
 public:
 	Transport();
-	Transport(char* s, int y);
-	void Input(char* s, int y);
+	Transport(const char* s, int y);
+	void Input(const char* s, int y);
 	void Print();
 	~Transport();
 };

@@ -7,14 +7,14 @@ Air::Air()
 	type = nullptr;
 }
 
-Air::Air(char* s, int y, char* t) :Transport(s, y)
+Air::Air(const char* s, int y,const char* t) :Transport(s, y)
 {
 
 	type = new char[strlen(t) + 1];
 	strcpy_s(type, strlen(t) + 1, t);
 }
 
-void Air::Input(char* s, int y, char* t)
+void Air::Input(const char* s, int y, const char* t)
 {
 	if (type != nullptr)
 	{
@@ -22,13 +22,6 @@ void Air::Input(char* s, int y, char* t)
 	}
 	type = new char[strlen(t) + 1];
 	strcpy_s(type, strlen(t) + 1, t);
-	/*if (surface != nullptr)
-	{
-		delete[] type;
-	}
-	year = y;
-	surface = new char[strlen(s) + 1];
-	strcpy_s(surface, strlen(s) + 1, s);*/
 	Transport::Input(s, y);
 }
 

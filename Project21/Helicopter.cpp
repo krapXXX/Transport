@@ -7,14 +7,14 @@ Helicopter::Helicopter()
 	firm = nullptr;
 }
 
-Helicopter::Helicopter(char* s, int y, char* t, char* f) :Air(s, y, t)
+Helicopter::Helicopter(const char* s, int y, const char* t, const char* f) :Air(s, y, t)
 {
 
 	firm = new char[strlen(f) + 1];
 	strcpy_s(firm, strlen(f) + 1, f);
 }
 
-void Helicopter::Input(char* s, int y, char* t, char* f)
+void Helicopter::Input(const char* s, int y, const char* t, const char* f)
 {
 	if (firm != nullptr)
 	{
@@ -22,20 +22,12 @@ void Helicopter::Input(char* s, int y, char* t, char* f)
 	}
 	firm = new char[strlen(f) + 1];
 	strcpy_s(firm, strlen(f) + 1, f);
-	/*if (surface != nullptr)
-	{
-		delete[] type;
-	}
-	year = y;
-	surface = new char[strlen(s) + 1];
-	strcpy_s(surface, strlen(s) + 1, s);*/
-	Transport::Input(s, y);
+	Air::Input(s, y, t);
 }
-
 void Helicopter::Print()
 {
-	Transport::Print();
-	cout << "Type: " << firm << endl;
+	Air::Print();
+	cout << "Firm: " << firm << endl;
 }
 
 Helicopter::~Helicopter()

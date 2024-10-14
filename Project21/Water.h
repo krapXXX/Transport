@@ -5,8 +5,8 @@ class Water :public Transport
 	char* type;
 public:
 	Water();
-	Water(char* s, int y, char* t);
-	void Input(char* s, int y, char* t);
+	Water(const char* s, const int y,const char* t);
+	void Input(const char* s, int y, const char* t);
 	void Print();
 	~Water();
 };

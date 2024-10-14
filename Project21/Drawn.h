@@ -5,8 +5,8 @@ class Drawn :public Land
 	char* animal;
 public:
 	Drawn();
-	Drawn(char* s, int y, char* t, char* a);
-	void Input(char* s, int y, char* t, char* a);
+	Drawn(const char* s, int y, const char* t, const char* a);
+	void Input(const  char* s, int y, const char* t, const char* a);
 	void Print();
 	~Drawn();
 };

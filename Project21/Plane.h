@@ -5,8 +5,8 @@ class Plane :public Air
 	char* firm;
 public:
 	Plane();
-	Plane(char* s, int y, char* t, char* f);
-	void Input(char* s, int y, char* t, char* f);
+	Plane(const char* s, int y, const char* t, const char* f);
+	void Input(const char* s, int y, const char* t, const char* f);
 	void Print();
 	~Plane();
 };

@@ -5,8 +5,8 @@ class Ferry :public Water
 	char* firm;
 public:
 	Ferry();
-	Ferry(char* s, int y, char* t, char* f);
-	void Input(char* s, int y, char* t, char* f);
+	Ferry(const char* s, int y, const  char* t, const char* f);
+	void Input(const char* s, int y, const char* t, const char* f);
 	void Print();
 	~Ferry();
 };

@@ -15,5 +15,11 @@
 using namespace std;
 int main()
 {
-	Auto a()
-}
+	Auto a;
+	a.Input("Land", 1995, "Auto", "Volkswagen");
+	a.Print();
+	Drawn d("Land", 1970, "Drawn", "Horse");
+	d.Print();
+	Plane p("Mriya", 1998, "Plane", "ukr");
+	p.Print();
+};
